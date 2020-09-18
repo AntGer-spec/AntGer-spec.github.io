@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <meta name="description" content="Описание страницы">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <script type="text/javascript">
+
+  document.addEventListener('click', function (e) {
+    
+
+  if (e.target.classList.contains("increase")) {
+    ++e.target.parentElement.querySelector("output").value;
+  }
+
+   else if (e.target.classList.contains("decrease"))  {
+
+    if (e.target.parentElement.querySelector("output").value > 0){
+
+     
+    --e.target.parentElement.querySelector("output").value;
+  }}
+})
+
+
+function multi(){
+    var multi_1, multi_2, result;
+  multi_1 = 12000;
+  multi_1 = parseInt(multi_1);
+  
+  multi_2 = document.getElementById('inp_2').value;
+  multi_2 = parseInt(multi_2);
+  //alert(multi_1*multi_2);
+  
+  result = multi_1*multi_2;
+  document.getElementById('result_multi').innerHTML = result;
+}
+    </script>
+
+  </head>
+
+  <body>
+
+    <main>
+
+      <div class="producs">
+
+        <div class="descriptoin">
+
+          <div class="mobil">
+            <h2>Honor 9c</h2>
+            <img src="img/honor 9c.png"><br>
+            <span class="price">Цена: 12.000 руб.</span>
+          </div>
+
+          <div class="text">
+            <h3>Основные характеристики:</h3>
+            <p>ОС Android 10 HMS, экран: 6.39", IPS, 1560×720, процессор: Kirin 710А, 2200МГц, 8-ми ядерный, GPS, время работы в режиме разговора, до: 50ч, в режиме ожидания, до: 200ч, оперативная память: 4ГБ, встроенная память: 64ГБ</p>
+          </div>
+
+        </div>
+
+        <div class="kal">
+          <label for="inp_2">Кол-во товара:</label> 
+          <button class="decrease" type="button" >-</button>
+          <output type="text" class="form-control" id="inp_2" ></output>
+          <button class="increase" type="button">+</button><br>
+          <button onclick="multi()" class="btn btn-primary">Рассчитать стоимость</button><br>
+          <span>К оплате:</span> <span id="result_multi"></span>
+        </div>
+    
+
+        <div class="bay_script">
+          <button class="btn_bay" type="button">Купить</button>
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
