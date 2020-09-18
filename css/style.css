@@ -1,0 +1,89 @@
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: Arial;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+
+header {
+  margin-top: 20px; 
+}
+
+.descriptoin {
+  width: px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mobil img{
+  width: 300px;
+}
+
+img {
+	padding-bottom: 10px;
+}
+
+.text{
+  margin-left: 20px;
+  font-size: 14pt;
+  text-align: justify;
+} 
+
+.price{
+  margin-top: 50px;
+  font-size: 15pt;
+}
+
+.kal span{
+  margin-top: 0px;
+  font-size: 16pt;
+}
+
+.kal label{
+  margin-top: 200px;
+  font-size: 14pt;
+}
+
+.btn-primary{
+  margin-top: 10px;
+  transition-duration: 1s;
+  color: #FFFFFF;
+  display: block;
+  padding: 5px 11px;
+  font-size: 12pt;
+  border: solid 1px #F9F9F9;
+  border-radius: 2px;
+  background: #4b84d9;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  transition-duration: 60s;
+}
+
+.btn-primary:hover{
+  background-color: #E30613;
+}
+
+.btn_bay{
+  margin-top: 10px;
+  transition-duration: 1s;
+  color: #FFFFFF;
+  display: block;
+  padding: 5px 11px;
+  font-size: 1.2em;
+  border: solid 1px #F9F9F9;
+  border-radius: 2px;
+  background: #4b84d9;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.btn_bay:hover{
+  background-color: #E30613;
+}

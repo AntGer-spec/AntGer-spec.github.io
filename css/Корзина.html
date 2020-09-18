@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0135)file:///D:/%D0%9F%D0%98-42/%D0%93%D0%B5%D1%80%D0%B0%D1%81%D0%B8%D0%BC%D0%BE%D0%B2/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0/index.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Корзина</title>
+    <meta name="description" content="Описание страницы">
+    <link rel="stylesheet" type="text/css" href="./Корзина_files/style.css">
+    <script type="text/javascript">
+    document.addEventListener('click', function (e) {
+  if (e.target.classList.contains("increase")) {
+    ++e.target.parentElement.querySelector("output").value;
+  } else if (e.target.classList.contains("decrease")) {
+    --e.target.parentElement.querySelector("output").value;
+  }
+})
+function multi(){
+    var multi_1, multi_2, result;
+  multi_1 = 12000;
+  multi_1 = parseInt(multi_1);
+  
+  multi_2 = document.getElementById('inp_2').value;
+  multi_2 = parseInt(multi_2);
+  //alert(multi_1*multi_2);
+  
+  result = multi_1*multi_2;
+  document.getElementById('result_multi').innerHTML = result;
+}
+    </script>
+
+  </head>
+
+  <body>
+
+    <main>
+
+      <div class="producs">
+
+        <div class="descriptoin">
+
+          <div class="mobil">
+            <h2>Honor 9c</h2>
+            <img src="./Корзина_files/honor 9c.jpg" height="350"><br>
+            <span>Цена: 12.000 руб.</span>
+          </div>
+
+          <div class="text">
+            <h3>Основные характеристики:</h3>
+            <p>ОС Android 10 HMS, экран: 6.39", IPS, 1560×720, процессор: Kirin 710А, 2200МГц, 8-ми ядерный, GPS, время работы в режиме разговора, до: 50ч, в режиме ожидания, до: 200ч, оперативная память: 4ГБ, встроенная память: 64ГБ</p>
+          </div>
+
+        </div>
+
+        <div class="kal">
+          <label for="inp_2">Кол-во товара:</label> 
+          <button class="decrease" type="button">-</button>
+          <output type="text" class="form-control" id="inp_2"></output>
+          <button class="increase" type="button">+</button><br>
+          <button onclick="multi()" class="btn btn-primary">Рассчитать стоимость</button><br>
+          <span>К оплате:</span> <span id="result_multi"></span>
+        </div>
+    
+
+        <div class="bay_script">
+          <button class="btn_bay" type="button">Купить</button>
+        </div>
+
+      </div>
+<!--
+      <div class="products" id="">
+        <h1>Товары</h1>
+        <h2>Honor 9c</h2>
+        <img src="img/honor 9c.jpg" width="250"><br>
+        <span> Основные характеристики: ОС Android 10 HMS, экран: 6.39", IPS, 1560×720, процессор: Kirin 710А, 2200МГц, 8-ми ядерный, GPS, время работы в режиме разговора, до: 50ч, в режиме ожидания, до: 200ч, оперативная память: 4ГБ, встроенная память: 64ГБ</span>
+        <p>Цена: 12.000 руб.</p>
+        <form action="action_form.php" method="POST">
+        	<fieldset>
+        		<legend>Оформление покупки</legend>
+   				<label>Количество:<br><input type="number" name="t" value="1" min="1" max="40" step="1"></label><br>
+   				<label>К оплате:<br><input type="text" name=""></label><br>
+   				<label><br><input type="submit" value="Оплатить"></label>
+   			</fieldset>
+  		</form>
+      </div>
+-->
+    </main>
+
+  
+
+</body></html>
